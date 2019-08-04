@@ -1,29 +1,14 @@
 import "./App.css";
 
 import React from "react";
+import { LinkList } from "./link-list/link-list.component";
+import { CreateLink } from "./create-link/create-link.component";
 
-import logo from "../assets/logo.svg";
-
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Learn React
-        </a>
-      </header>
+    <div>
+      <LinkList />
+      <CreateLink />
     </div>
   );
-}
-
-export default App;
+};
