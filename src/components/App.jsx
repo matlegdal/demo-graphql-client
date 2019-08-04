@@ -5,6 +5,7 @@ import { LinkList } from "./link-list/link-list.component";
 import { CreateLink } from "./create-link/create-link.component";
 import Header from "./header/header.component";
 import { Switch, Route } from "react-router-dom";
+import { Login } from "./login/login.component";
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
         <Switch>
           <Route exact path="/" component={LinkList} />
           <Route exact path="/create" component={CreateLink} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </div>
     </div>
